@@ -1,0 +1,34 @@
+@use "./variables" as v;
+
+.movies {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  &__card {
+    max-width: 300px;
+    min-height: 500px;
+    border: v.$border;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    color: v.$textColor;
+    padding-bottom: 10px;
+    background: v.$backColor;
+    box-shadow: v.$shadow;
+    cursor: pointer;
+    &:hover{
+        box-shadow: v.$shadovHover;
+    }
+    &-img {
+      max-width: 100%;
+      height: 440px;
+    }
+  }
+}

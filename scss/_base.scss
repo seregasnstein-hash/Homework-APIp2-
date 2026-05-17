@@ -1,5 +1,23 @@
+@use "./variables" as v;
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: v.$backColor;
+    background-image: url(../img/background_fon.png);
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.page{
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
 }

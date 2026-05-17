@@ -1,3 +1,36 @@
-.header{
-    
+@use "./variables" as v;
+
+.header {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  color: v.$textColor;
+  padding-right: 20px;
+  &__logo {
+    font-weight: bold;
+    font-size: 32px;
+    text-shadow: v.$textShadov;
+
+  }
+  &__button {
+    width: 180px;
+    height: 55px;
+    border: 1px solid #ff5e3a;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #111111, #1c1c1c, #2a0f0f);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: v.$shadow;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: v.$shadovHover
+    }
+    &:active {
+      transform: translateY(3px);
+    }
+  }
 }
