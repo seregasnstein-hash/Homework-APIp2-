@@ -1,21 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <script type="module" src="./js/main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="page">
-        <header class="header">
-            <div class="header__logo">MOVIE POSTERS</div>
-            <input class="header__button button" type="button" value="Войти">
-        </header>
-        <section class="movies">
-            
-        </section>
+      <header class="header">
+        <div class="header__logo">MOVIE POSTERS</div>
+        <input id="btnLogin" class="header__button button" type="button" value="Войти" />
+        <div class="header__user hidden">
+            <h2 class="header__user-name">Username</h2>
+          <input id="btnLogout" class="header__button button" type="button" value="Выйти" />
+        </div>
+      </header>
+      <section class="movies"></section>
     </div>
-</body>
+  </body>
 </html>

@@ -1,0 +1,39 @@
+@use "./variables" as v;
+
+.form__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__avtorization {
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: v.$border;
+  border-radius: 20px;
+  background: v.$backColor;
+  box-shadow: v.$shadow;
+  &:hover {
+    box-shadow: v.$shadovHover;
+  }
+  & > input {
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: v.$shadow;
+    &:hover{
+    box-shadow: v.$shadovHover;
+    }
+  }
+  &-button{
+    background-color: v.$backColor;
+    border: v.$border;
+    color: v.$textColor;
+  }
+}
